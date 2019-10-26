@@ -16,6 +16,12 @@ public class App extends AbstractVerticle {
         router.get("/").handler(rc -> rc.response().end(
             new JsonObject().put("hello", "project-001").toString()
         ));
+        router.get("/:name").handler(rc -> rc.response().end(
+            "hello " + rc.pathParam("name")
+        ));
+        vertx.createHttpServer()
+            .requestHandler(router::accept)
+            .listen(8085);
     }
 
 }
