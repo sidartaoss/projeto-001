@@ -14,7 +14,7 @@ public class App extends AbstractVerticle {
     public void start() throws Exception {
         Router router = Router.router(vertx);
         router.get("/").handler(rc -> rc.response().end(
-            new JsonObject().put("hello", "project-001").toString()
+            new JsonObject().put("hello", "project001").toString()
         ));
         router.get("/:name").handler(rc -> rc.response().end(
             new JsonObject().put("hello", rc.pathParam("name")).toString()
