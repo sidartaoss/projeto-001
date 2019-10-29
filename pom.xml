@@ -39,7 +39,24 @@
               <source>1.8</source>
               <target>1.8</target>
             </configuration>
-          </plugin>
+        </plugin>
+      <plugin>
+        <groupId>io.fabric8</groupId>
+        <artifactId>vertx-maven-plugin</artifactId>
+        <version>1.0.6</version>
+        <executions>
+          <execution>
+            <id>vmp-init-package</id>
+            <goals>
+              <goal>initialize</goal>
+              <goal>package</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <redeploy>true</redeploy>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
 </project>
