@@ -2,9 +2,13 @@
 
 A very simple project to learn Vertx for HTTP microservices.
 
-This project is based on the below reference, which can be downloaded at https://developers.redhat.com/promotions/building-reactive-microservices-in-java.
+This project is based on the references below.
 
     ESCOFFIER, C. Building Reactive Microservices in Java Asynchronous and Event-Based Application Design. First Edition. California: O’Reilly Media, Inc., 2017.
+
+    RedHat Developer, accessed 1 November 2019, <https://developers.redhat.com/promotions/building-reactive-microservices-in-java>
+
+    Kubernetes Hands-On - Deploy Microservices to the AWS Cloud 2018, Udemy, accessed 1 November 2019, <https://www.udemy.com/course/kubernetes-microservices>  
 
 
 ## Building Reactive Microservices
