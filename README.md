@@ -331,7 +331,8 @@ This is the YAML file for the Service named as project001. The Service exposes o
 
       ports:
         - name: http
-          port: 8080
+          port: 80
+          targetPort: 8080
       type: LoadBalancer
 
 
@@ -362,10 +363,10 @@ This is the AWS Load Balancer created into our cluster.
 The DNS name of the Load Balancer lets us to finally call our Vertx HTTP Microservice by entering the URL on the browser:
 
 
-![](images/Captura-de-tela-de-2019-11-01-17-45-38.png "Call out Vertx Http Microservice on the browser /.")
+![](images/Captura-de-tela-de-2019-11-03-09-22-26.png "Call our Vertx Http Microservice on the browser.")
 
 
-And by hitting /vertx:
+And by adding in the path /vert.x:
 
 
-![](images/Captura-de-tela-de-2019-11-01-17-54-05.png "Call out Vertx Http Microservice on the browser /vertx.")
+![](images/Captura-de-tela-de-2019-11-03-09-27-17.png "Call our Vertx Http Microservice on the browser adding in the path /vert.x.")
